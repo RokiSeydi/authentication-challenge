@@ -1,0 +1,32 @@
+[debug] [2020-07-14T10:30:58.214Z] ----------------------------------------------------------------------
+[debug] [2020-07-14T10:30:58.226Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2020-07-14T10:30:58.228Z] CLI Version:   8.5.0
+[debug] [2020-07-14T10:30:58.228Z] Platform:      darwin
+[debug] [2020-07-14T10:30:58.229Z] Node Version:  v12.18.1
+[debug] [2020-07-14T10:30:58.236Z] Time:          Tue Jul 14 2020 11:30:58 GMT+0100 (British Summer Time)
+[debug] [2020-07-14T10:30:58.238Z] ----------------------------------------------------------------------
+[debug] [2020-07-14T10:30:58.238Z] 
+[debug] [2020-07-14T10:30:58.278Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-14T10:30:58.279Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/rokiseydi/development/authentication-sandbox
+
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/rokiseydi/development/authentication-sandbox
+
