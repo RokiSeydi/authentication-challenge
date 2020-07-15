@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import styles from "./App.css";
 import firebase, {googleProvider} from "./firebase";
+import Routes from "./containers/Routes";
+import {Link} from "@reach/router";
+import Main from "./containers/Main";
 
 class App extends Component{
   
@@ -20,6 +23,11 @@ class App extends Component{
                   <img src={image}  alt="pic"/>
                   <p> {email}</p>
                   <button onClick={this.signOut}>Sign out</button>
+                  <h2>this link will work if you have signed in: 
+                    <Link to="main">
+                      < Main />
+                    </Link>
+                  </h2>
           </span>
         );
       } else {
@@ -41,8 +49,16 @@ class App extends Component{
   }
 
   signOut = () => {
-    firebase.auth().signOut();
-  }
+    firebase
+    .auth()
+    .signOut()
+    .then(() => {
+      this.setState({ user: null });
+    })
+    .catch(error => {
+      console.log(error);
+    });
+};
   
   getUser = () => {
     firebase.auth().onAuthStateChanged((user) => {
@@ -59,11 +75,9 @@ class App extends Component{
     console.log(this.state.user);
   return (
     <>
-      <div>
-        {this.getSignInOutJsx()}
-      </div>
+      < Routes signIn={this.getSignInOutJsx}/>
     </>
-  );
-}
+  ); 
+ }
 }
 export default App;
