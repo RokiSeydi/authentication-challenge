@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+}
+
+.main {
+    display: block;
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 29px;
+    border: 1px solid #999;
+    border-radius: 15px;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.781);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.profile .paragraph {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.btn {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    height: 50px;
+    border-radius: 10px;
+    background: transparent;
+    color: rgb(238, 228, 228);
+    outline: none;
+    width: 60%;
+    margin-left: 40px;
+}
+
+.btn:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #232323;
+}
+
+.btnOut {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    height: 50px;
+    border-radius: 10px;
+    background: transparent;
+    color: rgb(238, 228, 228);
+    outline: none;
+    width: 40%;
+    margin-left: 28%;
+}
+
+.btnOut:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #232323;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from "./App.css";
+import styles from "./App.module.scss";
 import firebase, {googleProvider} from "./firebase";
 
 class App extends Component{
@@ -15,18 +15,20 @@ class App extends Component{
       const email = this.state.user ? this.state.user.email : "No user";
       if (this.state.user) {
         return (
-          <span className={styles.main}>
-                  <h1>Hi {username}</h1>
+          <span className={styles.profile}>
+                  <h1>Hey {username} !</h1>
                   <img src={image}  alt="pic"/>
-                  <p> {email}</p>
-                  <button onClick={this.signOut}>Sign out</button>
+                  <div className={styles.paragraph}>
+                  <p> you have signed in with: {email}</p>
+                  </div>
+                  <button onClick={this.signOut} className={styles.btnOut}>Sign out</button>
           </span>
         );
       } else {
         return (
           <span className={styles.main}>
-              <h1>Please Sign in</h1>
-              <button onClick={this.signIn}>Sign in</button>
+              <h1>Please Sign In</h1>                            
+              <button onClick={this.signIn} className={styles.btn}>Sign in</button>         
           </span>
         );
       }
